@@ -1,0 +1,126 @@
+.section-2{
+	width: 100%;
+}
+.swipe-wrapper{
+	max-width: 1120px;
+	width: 100%;
+	padding-top: 40px;
+}
+.container{
+	padding: 10px 20px;
+	margin: 0 40px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	height: 420px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: rgba(0,0,0,0.25) 0 5px 15px;
+	border-radius: 30px;
+	margin-bottom: 50px;
+}
+.card-top{
+	height: 50%;
+	width: 100%;
+	background: #4070F4;
+	border-radius: 30px 30px 0 30px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	padding: 20px;
+}
+.card-down{
+	height: 50%;
+	width: 100%;
+	border-radius: 0 30px 30px 30px;
+	background: #fff;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.card-top::after{
+	content: "";
+	height: 40px;
+	width: 40px;
+	background: #4070F4;
+	position: absolute;
+	bottom: -25px;
+	right: 0;
+	z-index: 1;
+}
+.circle-1{
+	width: 147px;
+	height: 147px;
+	border-radius: 50%;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circle-2{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 5px solid #4070F4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.section-2 img{
+	width: 120px;
+	height: 100px;
+}
+.header{
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+.info{
+	width: 95%;
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.more-read{
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	background: #4070F4;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-pagination-bullet{
+	background: #6E93F7;
+	width: 10px;
+	height: 10px;
+}
+swiper-pagination-bullet-active{
+	background: #4070F4;
+}
+@media screen and (max-width :768px){
+	.swiper-button-next,
+	.swiper-button-prev{
+		visibility: hidden;
+	}
+	.container{
+		margin: 0;
+	}
+}
+
+

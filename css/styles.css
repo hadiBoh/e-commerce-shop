@@ -1,0 +1,194 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
+html{
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    background: #eee;
+	float: right;
+	text-align: right;
+	direction: rtl;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+	font-family: 'Noto Sans Arabic', sans-serif;
+  /* direction: rtl;*/
+}
+:before,:after{
+    box-sizing: border-box;
+}
+body{
+	overflow-y:scroll;
+}
+:root {
+	--main-bg-color: #eee;
+  }
+.wrapper{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.navbar{  
+	z-index: 99;                 /*navbar starts*/
+	width: 100%;
+	height: 60px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	position: sticky;
+	top: 0;
+	color: #fff;
+	box-shadow: rgba(0,0,0,0.2) 0 5px 10px;
+} 
+.nav-left{
+	display: flex;
+	flex: 0 0 45%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+} 
+.login-signup ,.search-sign{
+	margin: 0 10px;
+}
+.cart{
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+	position: relative;
+}
+.cart-section{
+	position: relative;
+}
+.quntity{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #ff0000;
+	top: -2.5px;
+	right: -5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo{
+	font-size: 25px;
+	font-weight: 500;
+	display: flex;
+	flex: 0 0 10%;
+}
+.search-sign{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-sign .login-signup{
+	outline: none;
+	border: none;
+	background: #9198e5;
+	max-width: 100px;
+	height: 45px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	transition: background 0.4s ease;
+	padding: 0 5px;
+}
+.search-sign .login-signup:hover{
+	background: #e6646f
+}
+.search{
+	position: relative;
+	display: flex;
+}
+.search input{
+	max-width: 200px;
+	width: 100%;
+	padding-right: 10px;
+	font-size: 15px;
+	outline: none;
+}
+.search i{
+	position: absolute;
+	color: #222;
+	left: 10px;
+	line-height: 35px;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+.navbar-links{
+	flex: 0 0 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	z-index: 99;
+}
+.navbar-links li{
+	height: 100%;
+	margin: 0 10px;
+	list-style: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar .fa-bars{
+	display: none;
+	right: 20px;
+	font-size: 20px;
+	flex: 0 0 0%;
+	margin-right: 20px;
+}
+.navbar .fa-bars.active{
+	display: flex;
+}
+@media screen and (max-width:811px){
+	.navbar-links{
+		position: absolute;
+		top: 0px;
+		right: 0;
+		background: #222;
+		opacity: 0.9;
+		width: 380px;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: flex-start;
+		visibility: hidden;
+	}
+	.navbar-links li{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		margin: 20px 0;
+	}
+	.nav-left{
+		flex: 0 0 70%;
+	}	
+	.logo{
+		flex: 0 0 20%;
+	}
+	.navbar .fa-bars.active{
+		flex: 0 0 10%;
+	}
+}                    /*navbar ends*/
+
+.body{                  /* body start */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+
+} 
+
+                        
